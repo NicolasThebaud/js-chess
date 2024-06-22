@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <style>
+            body {
+                overflow: hidden;
+                padding: 0;
+                margin: 0;
+                background-color: #333;
+                width: 1920px;
+                height: 1080px;
+            }
+            img {
+                display: none;
+            }
+            #board {
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+            #selection {
+                position: absolute;
+                z-index: 1000;
+                size: 0.5em;
+            }
+        </style>
+    </head>
+
+    <body>
+        <img id="sprite" src="pieces.png">
+
+        <canvas id="board" height=1000 width=1000></canvas>
+
+        <p id="selection"></p>
+    </body>
+
+    <script type="module" src="main.js"></script>
+</html>
